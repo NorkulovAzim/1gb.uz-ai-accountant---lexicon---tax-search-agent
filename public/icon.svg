@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient: Deep dark navy-slate to emerald obsidian -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#042f24"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Emerald Glow Center -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#059669" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Left Page / Wing Gradient -->
+    <linearGradient id="leftPageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="60%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Right Page / Wing Gradient -->
+    <linearGradient id="rightPageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#065f46"/>
+    </linearGradient>
+
+    <!-- Under-page Layer Gradient -->
+    <linearGradient id="underPageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+
+    <!-- Ribbon / Center Spine Gradient -->
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#6ee7b7"/>
+      <stop offset="80%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Sparkle Star Gradient -->
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#059669" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Star Glow Filter -->
+    <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#34d399" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#ffffff" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base App Icon Background -->
+  <rect width="512" height="512" rx="116" fill="url(#bgGrad)"/>
+  <rect x="6" y="6" width="500" height="500" rx="110" fill="none" stroke="url(#borderGrad)" stroke-width="6"/>
+
+  <!-- Radial Soft Emerald Ambient Backlight -->
+  <circle cx="256" cy="256" r="180" fill="url(#centerGlow)"/>
+
+  <!-- Central Symbol Group with Realistic Drop Shadow -->
+  <g filter="url(#shadowFilter)">
+    <!-- Base Foundation Ledger Silhouette -->
+    <path d="M 120 340 C 180 370 235 365 256 348 C 277 365 332 370 392 340 C 375 365 315 390 256 370 C 197 390 137 365 120 340 Z"
+          fill="url(#underPageGrad)" opacity="0.85"/>
+
+    <!-- Left Book Leaf (Curved dynamic accounting sheet) -->
+    <path d="M 248 185
+             C 215 160 160 152 110 178
+             C 102 182 98 192 100 201
+             L 114 316
+             C 116 324 123 330 131 328
+             C 178 312 222 320 248 344
+             Z"
+          fill="url(#leftPageGrad)"/>
+
+    <!-- Left Leaf Highlights & Shading (Ledger Line Embellishments) -->
+    <path d="M 140 216 C 175 200 210 205 236 220" stroke="#a7f3d0" stroke-width="4.5" stroke-linecap="round" opacity="0.75" fill="none"/>
+    <path d="M 144 246 C 175 233 205 237 236 250" stroke="#a7f3d0" stroke-width="4.5" stroke-linecap="round" opacity="0.6" fill="none"/>
+    <path d="M 148 276 C 175 266 205 270 236 280" stroke="#a7f3d0" stroke-width="4" stroke-linecap="round" opacity="0.45" fill="none"/>
+
+    <!-- Right Book Leaf (Symmetric dynamic accounting sheet) -->
+    <path d="M 264 185
+             C 297 160 352 152 402 178
+             C 410 182 414 192 412 201
+             L 398 316
+             C 396 324 389 330 381 328
+             C 334 312 290 320 264 344
+             Z"
+          fill="url(#rightPageGrad)"/>
+
+    <!-- Right Leaf Highlights (Ledger Line Embellishments) -->
+    <path d="M 372 216 C 337 200 302 205 276 220" stroke="#ecfdf5" stroke-width="4.5" stroke-linecap="round" opacity="0.85" fill="none"/>
+    <path d="M 368 246 C 337 233 307 237 276 250" stroke="#ecfdf5" stroke-width="4.5" stroke-linecap="round" opacity="0.7" fill="none"/>
+    <path d="M 364 276 C 337 266 307 270 276 280" stroke="#ecfdf5" stroke-width="4" stroke-linecap="round" opacity="0.5" fill="none"/>
+
+    <!-- Center Spine & Vertical Ribbon Marker -->
+    <path d="M 251 176 L 261 176 L 260 358 L 256 364 L 252 358 Z" fill="url(#ribbonGrad)"/>
+    <path d="M 256 182 L 256 352" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- Glowing AI Diamond Sparkle (Top Center of Knowledge & Intelligence) -->
+  <g filter="url(#starGlow)">
+    <!-- Central 4-point Diamond Star -->
+    <path d="M 256 100
+             C 256 126 264 142 284 148
+             C 264 154 256 170 256 196
+             C 256 170 248 154 228 148
+             C 248 142 256 126 256 100 Z"
+          fill="url(#starGrad)"/>
+
+    <!-- Center Star Core Glow Dot -->
+    <circle cx="256" cy="148" r="5" fill="#ffffff"/>
+
+    <!-- Secondary Small Sparkle (Upper Right) -->
+    <path d="M 314 116
+             C 314 125 318 130 326 132
+             C 318 134 314 139 314 148
+             C 314 139 310 134 302 132
+             C 310 130 314 125 314 116 Z"
+          fill="#6ee7b7" opacity="0.9"/>
+  </g>
+
+  <!-- Subtitle Accent: Minimalist Elegant Brand Dot -->
+  <circle cx="256" cy="406" r="4.5" fill="#10b981" opacity="0.8"/>
+  <circle cx="236" cy="406" r="3" fill="#34d399" opacity="0.5"/>
+  <circle cx="276" cy="406" r="3" fill="#34d399" opacity="0.5"/>
+</svg>

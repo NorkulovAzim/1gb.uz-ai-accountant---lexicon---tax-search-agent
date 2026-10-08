@@ -1,0 +1,6 @@
+{
+  "name": "1GB.uz AI Accountant - Lexicon & Tax Search Agent",
+  "description": "AI-powered bilingual accounting & tax terminology search agent for 1gb.uz (Система Главбух Узбекистан). Search terms like НДС to instantly get Uzbek translations (ҚҚС / QQS), legal context, Tax Code references, and accounting standards in a clean list format.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
